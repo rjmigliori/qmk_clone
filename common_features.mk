@@ -18,7 +18,8 @@ SERIAL_PATH := $(QUANTUM_PATH)/serial_link
 QUANTUM_SRC += \
     $(QUANTUM_DIR)/quantum.c \
     $(QUANTUM_DIR)/keymap_common.c \
-    $(QUANTUM_DIR)/keycode_config.c
+    $(QUANTUM_DIR)/keycode_config.c \
+    $(QUANTUM_DIR)/power.c
 
 ifeq ($(strip $(API_SYSEX_ENABLE)), yes)
     OPT_DEFS += -DAPI_SYSEX_ENABLE
